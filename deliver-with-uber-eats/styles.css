@@ -105,6 +105,9 @@ body {
     background-color: white;
     color: black;
 }
+#menuIcon {
+    display: none;
+}
 
 #signup:hover {
     background-color: #e0e0e0;
@@ -614,7 +617,7 @@ footer a {
     color:#6B6B6B;
 }
 
-.rightfoot p:hover {
+.rightfoot a:hover {
     color:#222222;
 }
 
@@ -626,12 +629,22 @@ footer a {
         display: inline-block;
     }
     .top #login {
-        position: relative;
-        left: 45%;
+        position: absolute;
+        right: 120px;
+        bottom: 568px;
     }
     .top #signup {
-        position: relative;
-        left: 45%;
+        position: absolute;
+        right: 50px;
+        bottom: 568px;
+    }
+    .top #menuIcon {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        bottom: 565px;
+        width: 20px;
+
     }
     .secondtop div {
         display: none;
@@ -654,10 +667,10 @@ footer a {
         margin: 0;
     }
     #deliverSignUp {
-        margin: 0;
+        margin: 20px 0;
     }
     #deliverSignIn {
-        margin: 0;
+        margin: 20px 0;
         top: 50vh;
     }
     .thirdtop img {
@@ -667,23 +680,26 @@ footer a {
         height: 90%;
     }
     .search h1 {
-        margin-left: 7%;
+        margin-left: 5%;
     }
     .search input {
         width: 65vw;
-        margin-left: 7%;
+        margin-left: 5%;
         
     }
     #searchIcon {
-        left: 78vw;
+        position: relative;
+        top: 10px;
+        margin-left: 5%;
     }
     .video {
-        height: auto;
-        width: auto;
+        height: 48vw;
+        width: 90%;
         padding: 0 5%;
     }
     .video iframe {
-        height: 40vh;    
+        width: 100%;
+        height: 100%;
     }
     .middle {
         height: auto;
@@ -695,6 +711,9 @@ footer a {
         margin-left: 7%;
         margin-top: 15%;
     }
+    .icon {
+        width: 30vh;
+    }
     .dot {
         left: 7vw;
     }
@@ -703,7 +722,13 @@ footer a {
         height: 75vh;
     }
     .icon {
-        padding-left: 30%;
+        padding-left: 25%;
+        padding-top: 10vh;
+    }
+    .icon img {
+        width: 40vw;
+        max-width: 150px;
+        height: unset;
     }
     .textarea{
         display: block;
@@ -720,6 +745,8 @@ footer a {
     .signuptoday {
         margin-left: 7vw;
         width: 80%;
+        font-size: 1rem;
+        padding: 7vh 0;
 
     }
     .signuptoday img {
@@ -738,12 +765,12 @@ footer a {
     }
     .driverapplogo img{
         width: 15vh;
-        height: 15vh;
+        height: unset;
 
     }
     .driverapplogo h1 {
-        width: 70%;
-        bottom: 7vw;
+        width: 60%;
+        bottom: 3vh;
     }
     .driverapplogo h1 img {
         position: relative;
@@ -753,22 +780,29 @@ footer a {
     .notice {
         width: 86vw;
         padding-left: 7vw;
-        padding-bottom: 10vh;
+        padding-bottom: 20vh;
     }
     .icons1 {
         width: 100%;
         margin-bottom: 50px;
+    }
+    .icons1 img {
+        margin-right: 0vw;
     }
     .icons2 {
         padding-left: 0;
         width: 100%;
         margin-bottom: 50px;
     }
+    .appstore img {
+        margin-right: 2vw;
+    }
     .rightfoot {
         display: block;
         padding-left: 0;
         margin-top: 50px;
     }
+
 
 }
 
