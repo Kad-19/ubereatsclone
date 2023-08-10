@@ -630,19 +630,19 @@ footer a {
     }
     .top #login {
         position: absolute;
-        right: 120px;
-        bottom: 90vh;
+        right: 130px;
+        bottom: 88vh;
     }
     .top #signup {
         position: absolute;
-        right: 50px;
-        bottom: 90vh;
+        right: 60px;
+        bottom: 88vh;
     }
     .top #menuIcon {
         display: inline-block;
         position: absolute;
         right: 10px;
-        bottom: 90vh;
+        bottom: 88vh;
         width: 20px;
 
     }
