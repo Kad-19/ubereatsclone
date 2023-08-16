@@ -56,6 +56,21 @@ locationElm.addEventListener('click', () => ElemClick(locationDropdownElm));
 locationElm.addEventListener("click", function(e) { e.stopPropagation()});
 locationDropdownElm.addEventListener("click", function(e) { e.stopPropagation()});
 
+const locationBtnElm = document.getElementById('locationbtn');
+const locationHiddenTextElm = document.getElementById('hiddenText');
+const locationHiddenTitleElm = document.getElementById('hiddenTextTitle');
+
+locationBtnElm.addEventListener('click', () => showMore(locationHiddenTextElm, locationHiddenTitleElm, locationBtnElm));
+
+
+const backList = document.querySelectorAll('.backIcon');
+console.log(backList);
+
+for(i = 0;i < backList.length; i++){
+    backList[i].addEventListener('click', () => allNotappear());
+    backList[i].addEventListener('click', () => sectionsAppear());
+}
+
 
 
 function ElemClick(elem){
@@ -72,6 +87,7 @@ function ElemClick(elem){
     }
     else {
         elem.classList.add('notappear');
+        sectionsAppear();
     }
 
 }
@@ -110,6 +126,19 @@ function sectionsAppear(){
         if(sectionsList[i].classList.contains('notappear')){
             sectionsList[i].classList.remove('notappear');
         }
+    }
+}
+
+function showMore(text, title, elem){
+    if(text.classList.contains('notappear')){
+        text.classList.remove('notappear');
+        title.classList.remove('notappear');
+        elem.innerText = "Show less";
+    }
+    else{
+        text.classList.add('notappear');
+        title.classList.add('notappear');
+        elem.innerText = "Show more";
     }
 }
 
