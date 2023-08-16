@@ -415,8 +415,12 @@ li {
     font-size: 1.5rem;
 }
 
+.signuptoday a:hover {
+    color: #6B6B6B;
+}
+
 .signuptoday a{
-    color: #323232;
+    color: black;
     text-decoration: none;
 }
 .signuptoday img {
@@ -506,8 +510,96 @@ li {
     color:#6B6B6B;
     width: 130px;
 }
+
+#companyDropdown a{
+    text-decoration: none;
+}
 #companyDropdown li:hover {
     background-color: #F6F6F6;
+    color: black;
+}
+.backIcon {
+    position: absolute;
+    right: calc(10px + 10vw);
+    top: 10vh;
+    width: 35px;
+    height: 35px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.backIcon:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.backIcon img {
+    height: 25px;
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+#langDropdown h1{
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+    width: fit-content;
+}
+#langDropdown a{
+    text-decoration: none;
+    color: black;
+}
+
+#langbtn {
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+    width: 20%;
+    min-width: 200px;
+    height: 37px;
+    border-radius: 10px;
+    padding: 18px 0 0 25px;
+    font-weight: 600;
+    background-color: #e6e6e6;
+}
+
+#productsDropdown {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    top: 10vh;
+    left: 62vw;
+    z-index: 1;
+    overflow-y:scroll;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 5px;
+}
+
+.productList {
+    padding: 20px 30px;
+    border-bottom: 0.5px solid rgba(200, 200, 200, 0.3);
+}
+
+.productList a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.productList:hover {
+    background-color: #F6F6F6;
+}
+
+.productList img{
+    height: 20px;
+    margin-right: 20px;
+}
+
+.productName {
+    display: inline-block;
+    font-weight: 600;
     color: black;
 }
 
@@ -517,7 +609,106 @@ li {
     top: 20vh;
     z-index: 1;
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
+}
+#loginDropdown, #signUpDropdown {
+    padding-bottom: 150px;
+    height: fit-content;
+}
+
+#loginDropdown a, #signUpDropdown a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdownItems {
+    display: inline-block;
+    position: relative;
+    top: 25vh;
+    border-bottom: 1px solid black;
+    width: 35%;
+    min-width: 400px;
+    margin: 50px 0 20px 10vw;
+    height: 150px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.dropdownItems:hover{
+    color: #6B6B6B;
+    cursor: pointer;
+}
+
+.dropdownItems img {
+    height: 25px;
+    position: absolute;
+    right: 2px;
+    top: 30px;
+}
+
+.dropdownItems p {
+    display: inline-block;
+    width: 80%;
+}
+
+#locationDropdown h1{
+    position: relative;
+    top: 20vh;
+    left: 6vw;
+    display: inline-block;
+    width:fit-content;
+}
+
+#locationDropdown input{
+    position: relative;
+    top: 19vh;
+    left: 15vw;
+    display: inline-block;
+    width: 40%;
+    min-width: 500px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+#locationInfo {
+    position: relative;
+    top: 20vh;
+    left: calc(15vw + 330px);
+    width: 40%;
+    min-width: 500px;
+}
+
+#locationbtn {
+    position: relative;
+    top: 20vh;
+    left: calc(15vw + 330px);
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#locationDropdown h3 {
+    position: relative;
+    top: 20vh;
+    left: calc(15vw + 330px);
+    width: fit-content;
+    margin-top: 30px;
+}
+
+#hiddenText {
+    position: relative;
+    top: 20vh;
+    left: calc(15vw + 330px);
+    width: 40%;
+    min-width: 500px;
 }
 
 footer {
@@ -612,7 +803,7 @@ footer a {
 
 .icons2 img {
     position: relative;
-    top: 1vh;
+    top: 3px;
     
 }
 
@@ -623,6 +814,7 @@ footer a {
 }
 .icons2 a:hover {
     background-color: #323232;
+    cursor: pointer;
 }
 
 .appstore {
